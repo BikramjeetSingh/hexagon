@@ -239,6 +239,10 @@ class Router(block: Router.() -> Unit = {}) {
         requestHandlers = requestHandlers + FileHandler(Route(Path(path), GET), file)
     }
 
+    fun webSocket(path: String, block: WebSocketCallback) {
+
+    }
+
     /**
      * Register CORS for the router.
      *

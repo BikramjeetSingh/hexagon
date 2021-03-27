@@ -12,6 +12,9 @@ typealias ExceptionCallback = Call.(Exception) -> Unit
 /** Alias for errors' callbacks. Functions executed to handle a HTTP error code. */
 typealias ErrorCodeCallback = Call.(CodedException) -> Unit
 
+/** Alias for websocket callbacks. */
+typealias WebSocketCallback = WebSocket.() -> Unit
+
 /**
  * Create a server and start it.
  *
